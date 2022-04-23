@@ -1,0 +1,10 @@
+[package]
+name = "embed_redirect"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = { version = "1.17.0", default-features = false, features = ["macros", "rt-multi-thread"] }
+axum = { version = "0.5.3", default-features = false, features = ["http1", "http2", "query"] }
+serde = { version = "1.0.136", features = ["derive"] }
+html-escape = "0.2.11"
